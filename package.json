@@ -1,0 +1,23 @@
+{
+  "name": "bitmex-my-ws",
+  "version": "0.1.0",
+  "description": "package for delta server",
+  "main": "index.js",
+  "repository": "git@git.evennode.com:48d4286f531c95a3c6ebcd231a04db67.git",
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "cd nodejs && npm install",
+    "start": "sh run.sh"
+  },
+  "keywords": [
+    "bitmex",
+    "bitcoin",
+    "websocket",
+    "api"
+  ],
+  "author": "RG",
+  "license": "UNLICENSED"
+}
