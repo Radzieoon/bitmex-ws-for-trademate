@@ -4,6 +4,7 @@ const _ = require('lodash');
 const express = require('express');
 const BitMEXClient = require('../../nodejs/index');
 const debug = require('debug')('BitMEX:Delta-Server');
+const cors = require('cors');
 
 module.exports = function createServer(config) {
   const app = initServer(config);
@@ -63,6 +64,8 @@ function initWSClient(app, config) {
       });
     });
   });
+
+  app.use(cors());
 
   app.get('/:stream', function(req, res) {
     const symbol = req.query.symbol;
