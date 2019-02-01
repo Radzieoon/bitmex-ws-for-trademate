@@ -233,7 +233,7 @@ function addStreamHelper(client, symbol, tableName, callback) {
 function clone(data) {
   if (!Array.isArray(data)) {
     console.log(data);
-    data = Object.values(data)[0];
+    data = Object.values(data);
   }
   return data.map(o => Object.assign({}, o));
 }
